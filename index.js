@@ -1,4 +1,4 @@
-const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
+const { Client, GatewayIntentBits, EmbedBuilder, ActivityType } = require('discord.js');
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
 
@@ -70,6 +70,9 @@ function getRandomItem(caseData) {
 
 client.on('ready', () => {
   console.log(`✅ Bot logged in as ${client.user.tag}`);
+  
+  // Set bot status/activity
+  client.user.setActivity('case opening', { type: ActivityType.Playing });
 });
 
 client.on('messageCreate', async (message) => {
