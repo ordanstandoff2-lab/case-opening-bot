@@ -13,9 +13,7 @@ const cases = {
       'ARCANE': 1
     },
     items: [
-      // Format: { name: 'Skin Name', rarity: 'RARE', imageUrl: 'https://...' }
-      // Add your items here
-    ]
+    { name: 'Kara', rarity: 'RARE', imageUrl: 'https://media.discordapp.net/attachments/820902388579172383/1507719395923857418/IMG_0333.png?ex=6a158f9c&is=6a143e1c&hm=8ac7b324046c953c2e94390ad9294a9e98edd9c450e0d0a8002dbeb355275627&=&format=webp&quality=lossless&width=1375&height=960' }
   },
   'dynasty': {
     name: 'Dynasty Case',
